@@ -1,1 +1,30 @@
- 
+from django.shortcuts import render
+from django.utils import timezone
+from .models import Post
+def post_list(request):
+    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+    return render(request, 'blog/post_list.html', {'posts': posts})
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Django Girls blog</title>
+    </head>
+    <body>
+        <header>
+            <h1><a href="/">Django Girls Blog</a></h1>
+        </header>
+    
+        
+            <article>
+                <time>published: June 30, 2014, 10:58 pm</time>
+                <h2><a href="">My second post</a></h2>
+                <time>published: June 29, 2014, noon</time>
+                <h2><a href="">My fist post</a></h2>
+                
+    
+            </article>
+        
+    </body>
+    </html>
+    
