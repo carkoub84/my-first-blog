@@ -1,0 +1,13 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <article class="post">
+        {% if post.published_date %}
+            <time class="date">
+                published: June 30, 2014, 10:58 pm
+            </time>
+        {% endif %}
+        <h2>My Second Post</h2>
+        <p>Hello World</p>
+    </article>
+{% endblock %}
