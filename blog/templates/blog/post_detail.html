@@ -2,6 +2,13 @@
 
 {% block content %}
     <article class="post">
+        <aside class="actions">
+            {% if user.is_authenticated %}
+            <a class="btn btn-secondary" href="{% url 'post_edit' pk=post.pk %}">
+                {% include './icons/pencil-fill.svg' %}
+            </a>
+            {% endif %}
+        </aside>
         {% if post.published_date %}
             <time class="date">
                 published: June 30, 2014, 10:58 pm
@@ -9,5 +16,7 @@
         {% endif %}
         <h2>My Second Post</h2>
         <p>Hello World</p>
+        
     </article>
+    
 {% endblock %}

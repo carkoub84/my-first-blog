@@ -1,13 +1,20 @@
-{% block content %}       
-{% for post in posts %}
+
+    <html>
+        <head>
+            <title>Django Girls</title>
+        </head>
+    <body>
+        <header>
+            <h1><a href="/">Django Girls</a></h1>
+        </header>
+ 
     <article class="post">
-        <time class="date">published: June 30, 2014, 10:58 pm</time>
-        <h2><a href="{% url 'post_detail' pk=post.pk %}">My Second Post</a></h2>
-        <p>Hello World</p>
-        <time class="date">published: June 29, 2014, noon</time>
-        <h2><a href="">My First Post</a></h2>
-        <p>Welcome!</p>
+        <time class="date">published: December 17, 2023, 12:24 pm</time>
+        <h2><a href="{% url 'post_detail' pk=post.pk %}">New post</a></h2>
+        <p>Title:        
+            Chabha Arkoub</p>
+        
     </article>
-{% endfor %}
-{% endblock %}
+Text:
+Welcome to Django Girls Blog!
          
