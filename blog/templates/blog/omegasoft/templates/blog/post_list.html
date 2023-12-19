@@ -1,0 +1,105 @@
+
+    <html>
+        <head>
+            <title>Omegasoft Blog</title>
+            <style>
+                @keyframes slideme {
+                  from { margin-left: 100%;
+                         width: 300%;  }
+                   50% { margin-left: 50%;
+                         font-size: 250%; }
+                    to { font-size: 300%;
+                         margin-left: 0%;
+                         width: 100%; }
+                }
+                
+                * { box-sizing: border-box; margin: 0; }
+                body {font-family:'Times New Roman', Times, serif, 'Times New Roman', Times, serif, sans-serif; }
+                nav {  background-color: #B3C7E6; }
+                nav ul { list-style-type: none; 
+                         margin: 1;
+                         padding: 1;
+                }
+                nav li { border-bottom: 1px solid #ffffff;
+                }
+                nav a { text-decoration: none; 
+                        display: block;
+                        padding: 1em 2em;
+                }
+                nav a:link { color: #FFFFFF; }
+                nav a:visited { color: #F8F8F8; }
+                nav a:hover {  color: #000066;
+                               background-color: #eaeaea;
+                }
+                </style>
+        </head>
+        <body>
+            <header>
+              <h1>Omegasoft</h1>
+            </header>
+            <div id="content">
+              <nav>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rooms.html">Menu</a></li>
+                <li><a href="directions.html">Directions</a></li>
+                <li><a href="contact.html">Contact</a></li>
+               </ul>
+              </nav>
+              <main> 
+                <h2>Omegasoft products</h2>
+               <p>Laptop
+                Product Name: OmegaBook Pro X
+                Price: $1,299.99
+                Description: High-performance laptop with the latest processor, ample RAM, and a sleek design.
+                Smartphone
+                Product Name: OmegaPhone 12
+                Price: $899.00
+                Description: Feature-packed smartphone with a stunning display, advanced camera system, and fast-charging capability.
+                Fitness Tracker
+                Product Name: OmegaFit Tracker
+                Price: $79.99
+                Description: Wearable fitness tracker with heart rate monitoring, step counting, and sleep tracking features.
+                </p>
+               <h2>Orders</h2>
+               <p>Omegasoft efficiently manages orders with a streamlined system, providing real-time tracking, order history, and seamless processing to ensure a smooth and reliable customer experience.</p>
+                 <h2>Quality</h2>
+               <p> OmegaSoft products are renowned for their exceptional quality, combining cutting-edge technology, meticulous craftsmanship, and innovative design to deliver an unparalleled user experience.</p>
+               <h2>Location</h2>
+               <p>www.omegasoft.com<br><br></p>
+               <div id="offer">
+               <a href="#">Special Offer</a>
+               </div>
+            </main>
+              <aside>
+                  <figure>
+                    <img src="omegasoft_logo.png" width="250" height="250" id="floatright" alt="omegasoft">
+                    <figcaption>Omegasoft</figcaption>
+                  </figure>
+              </aside>
+              </div>
+                <footer>Copyright &copy; 2020     </footer>
+           </body>
+           </html>
+    <body>
+        <header>
+            <h1><a href="/">Omegasoft Products</a></h1>
+        </header>
+ 
+    <article class="post">
+        <time class="date">published: December 17, 2023, 12:24 pm</time>
+        <h2><a href="{% url 'post_detail' pk=post.pk %}">Omegasoft blog</a></h2>
+        <p>Title:        
+            Omegasoft App</p>
+            <h2>Enjoy using our Omegasoft application!</h2>
+    <form method="POST" class="post-form">
+        
+        <button type="submit" class="save btn btn-secondary">Save</button>
+    </form>
+        
+    </article>
+Text:
+Welcome to Omegasoft Blog!
+    </body>
+</html>
+         

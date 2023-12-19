@@ -10,6 +10,21 @@
       }
     ],
     "meta-charset-utf-8": "off",
-    "meta-viewport": "off"
+    "meta-viewport": "off",
+    "compat-api/html": [
+      "default",
+      {
+        "ignore": [
+          "meta[name=theme-color]"
+        ]
+      }
+    ],
+    "no-inline-styles": "off",
+    "axe/text-alternatives": [
+      "default",
+      {
+        "document-title": "off"
+      }
+    ]
   }
 }
